@@ -11,7 +11,7 @@ for i in t:    # 在列表中进行操作
         if i % j == 0:         # 如果数能够被整除，就不是素数
             break
     else:     # 否则就是素数
-        print("在列表中{0}是一个素数".format(i))
+        print("在集合中{0}是一个素数".format(i))
 
 
 

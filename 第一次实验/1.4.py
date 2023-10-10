@@ -3,8 +3,8 @@ import math
 
 k = int(input("请输入要求素数的上限："))
 
-t = [1]
-for i in range(1, k):
+t = [2]
+for i in range(2, k):
     t.append(i + 1)
 print("原始列表：", list(t))
 

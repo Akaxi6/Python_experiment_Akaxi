@@ -6,7 +6,7 @@ pi = math.pi  # 定义pi
 S = 4.0/3 * pi * pow(r, 3)
 V = 4 * pi * pow(r, 2)
 
-print('半径为{0}球的表面积为{1:.2f}，体积为{2:.2f}'.format(r, S, V))
+print('半径为{0:.2f}球的表面积为{1:.2f}，体积为{2:.2f}'.format(r, S, V))
 
 
 

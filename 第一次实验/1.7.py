@@ -6,7 +6,7 @@ c = 0
 for i in range(0, 105, 5):
     c = c + 1
     k = 21 - c
-    print("{0:3}% |{1}{2}".format(i, c * '*', k * '-'))
+    print("\r{0:3}% |{1}{2}".format(i, c * '*', k * '-'), end=' ')
     time.sleep(0.2)
 
 

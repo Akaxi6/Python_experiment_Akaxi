@@ -12,9 +12,9 @@ for ch in s:
         flag[0] = True
     elif not flag[1] and ch.islower():    # 小写字母
         flag[1] = True
-    elif not flag[2] and ch.isdigit():    # 大写字母
+    elif not flag[2] and ch.isdigit():    # 数字
         flag[2] = True
-    elif not flag[3] and ch in '~`!@#$%^&*()_+{}[]:;:?/>.<,':  # 大写字母
+    elif not flag[3] and ch in '~`!@#$%^&*()_+{}[]:;:?/>.<,':  # 其他字符
         flag[3] = True
 
 print(d.get(sum(flag)))

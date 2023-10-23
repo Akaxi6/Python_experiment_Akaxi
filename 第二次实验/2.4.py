@@ -9,7 +9,10 @@ def My_sort(n):    # 把数字从大到小排序
 
 
 def My_6174(n):
-    while True:  # 一直循环
+    step = 1
+    old_n = n
+    print('验证：', old_n)
+    while step <= 8:  # 一直循环
         n = int(n)  # 把n改成整数
         m = int(My_sort(n))  # 把n从大到小排序
         m_re = int(str(m)[::-1])  # 把m变成字符串后反序再变成整数
@@ -19,7 +22,26 @@ def My_6174(n):
             break
         else:
             n = k  # 把差值作为新的数字
+        step += 1  # 步数加一
+    if k == 6174 and step <= 8:
+        print('{0}进行了{1}次算法得到了6174'.format(old_n, step))
+        return True
+    else:
+        print('验证6174失败')
+        return False
 
 
-n = input('请输入一个四位数：')
-My_6174(n)
+Flag = True
+i = 999
+
+while Flag and i < 9999:    # 如果正确就会一直验证
+    i += 1
+    if len(set(str(i))) == 1:    # 如果所有数字都相同，则跳过
+        continue
+    else:    # 否则就进行验证
+        Flag = My_6174(i)
+
+if Flag == True:
+    print('在四位数中验证6174没有失败！！猜想正确！')
+elif Flag == False:
+    print('在四位数中验证6174有失败！！猜想错误！')

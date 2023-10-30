@@ -20,7 +20,3 @@ def My_baoshu(n, k):
 n = int(input("请输入多少个人参与："))
 k = int(input("请输入报到多少退出圈子："))
 My_baoshu(n, k)
-
-
-
-

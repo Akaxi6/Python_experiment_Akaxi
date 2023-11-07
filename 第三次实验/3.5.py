@@ -48,6 +48,4 @@ def My_read(file_path):
 file_path = 'My_file.bin'     # 写的文件名字
 num_entries = 3                   # 随机生成信息的数量
 My_write(file_path, num_entries)  # 写入文件
-
-# 从二进制文件中读取信息并打印
-My_read(file_path)
+My_read(file_path)    # 从二进制文件中读取信息并打印
